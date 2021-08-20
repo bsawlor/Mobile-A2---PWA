@@ -3,10 +3,10 @@ const Page = require("./_layout/Default");
 
 module.exports = class extends Page {
     constructor(){
-        super({title:"Home", sName:"Richard Hildred"});
+        super({title:"Home", sName:"Group 6"});
     }
     render(sPage) {
-        const oJson = fetch("https://prog8110summer2021-default-rtdb.firebaseio.com/meals.json").json();
+        const oJson = fetch("https://popup-meals-b6bfd-default-rtdb.firebaseio.com/meals.json").json();
         console.log(oJson);
         let sResult = "<h1>Upcoming Popup Meals</h1>";
         let n = 0;
